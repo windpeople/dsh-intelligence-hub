@@ -1,0 +1,68 @@
+{
+  "name": "dsh-intelligence-hub",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local intelligence hub: collect RSS / GitHub / arXiv feeds into SQLite and expose search tools.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/webapi.js",
+    "cordis.patch.yml",
+    "locale/en.json",
+    "locale/zh.json",
+    "icon.svg",
+    "lib/db.js",
+    "lib/normalize.js",
+    "lib/pipeline.js",
+    "lib/tools.js",
+    "lib/http.js",
+    "lib/adapters/rss.js",
+    "lib/adapters/github.js",
+    "lib/adapters/arxiv.js",
+    "lib/scheduler.js",
+    "lib/report.js",
+    "lib/analysis.js",
+    "lib/retention.js",
+    "lib/profile.js",
+    "lib/events.js",
+    "lib/scoring.js",
+    "lib/codeResearch.js",
+    "lib/research.js",
+    "lib/learning.js",
+    "lib/feedback.js",
+    "lib/coverage.js",
+    "lib/discovery.js",
+    "lib/memoryBridge.js",
+    "lib/topics.js",
+    "lib/usage.js"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5 || ~4.1.0",
+    "@deepseek-ai/dsh-tools": "0.2.1-rc.5 || 0.2.2-rc.1",
+    "@deepseek-ai/dsh-web": "0.2.1-rc.5 || 0.2.2-rc.1",
+    "@deepseek-ai/schemastery": "~3.18.5 || ~3.19.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

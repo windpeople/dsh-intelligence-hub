@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "情报中枢",
+    "description": "采集 RSS、GitHub、arXiv 情报到本地 SQLite 库，并提供检索、状态与手动采集工具。"
+  }
+}

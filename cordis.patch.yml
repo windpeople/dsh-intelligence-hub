@@ -1,0 +1,12 @@
+- insert:
+    - id: intel-hub
+      name: dsh-intelligence-hub
+      config:
+        enabled: true
+        dbPath: ''
+        collectEnabled: true
+        collectIntervalHours: 6
+        maxPerRun: 20
+        analysisEnabled: true
+        analysisProvider: zai-coding-cn
+        analysisModel: glm-5.3-flash

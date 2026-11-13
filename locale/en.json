@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Intelligence Hub",
+    "description": "Collects RSS, GitHub and arXiv feeds into a local SQLite library and exposes search/status/collect tools."
+  }
+}
